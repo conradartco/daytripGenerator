@@ -170,3 +170,57 @@ def get_summary():
                 
 
 run_trip_gen()
+
+# The generator above doesn't utilize paramaters as it should
+# Below I tried using paramater more thoroughly to better understand, but still didn't quite get it - looking forward to seeing the solution!
+
+#def get_rand_destination():
+#    var1 = random.choice(destinations)
+#    dest_result = get_dest_answer(var1) 
+#    if dest_result == False:
+#        get_rand_destination()
+#        return dest_result
+#    else:
+#        return dest_result
+
+#def get_dest_answer(var1):
+#    answer_value = get_1st_input(var1)
+#    if answer_value == False:
+#        return answer_value
+#    else:
+#        return answer_value
+
+#def get_1st_input(var1):
+#    initial_dest_answer = input(f"Want to go to {var1}? y/n : ")
+#    if initial_dest_answer == 'y':
+#        return var1
+#    elif initial_dest_answer == 'n':
+#        rejection = False
+#        return rejection
+
+
+#def present_itenerary(var1): 
+#    print(var1)
+#    destination_select = confirm_iten()
+#    if destination_select != var1:
+#        present_itenerary(destination_select)
+#    else:
+#        return
+    
+
+#def confirm_iten():
+#    iten_confirm = input("Would you like to confirm this reservation? y/n ")
+#    if iten_confirm == 'y':
+#        print("hooray!")
+#    elif iten_confirm == 'n':
+#        change_answer = input("Which item would you like to change? a/b/c/d : ")
+#        if change_answer == 'a':
+#            new_dest_value = get_rand_destination()
+#        return new_dest_value
+
+#def generator():
+#   destination_select = get_rand_destination()
+#   present_itenerary(destination_select)
+   
+
+#generator()
